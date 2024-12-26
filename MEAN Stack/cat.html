@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cat Photo app</title>
+</head>
+<body>
+    <header>
+        <h1>Cat_PhotoApp</h1>
+    </header>
+    <section>
+        <h2>Cat Photos</h2>
+        <p>Everyone loves <a href="https://www.pexels.com/search/cat/">cute cats</a> online</p>
+        <p>See more <a href="https://unsplash.com/s/photos/beautiful-cat">cat Photos</a> in our gallery</p>
+        <div class="image-container">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDUWB51JwETzUH9_F2hZJzagg0LKEV6dYi8g&s" alt="Its ME meow meow">
+            <img src="https://images.ctfassets.net/ub3bwfd53mwy/5WFv6lEUb1e6kWeP06CLXr/acd328417f24786af98b1750d90813de/4_Image.jpg?w=750" alt="">
+            <img src="https://media.tenor.com/dimT0JAAMb4AAAAM/cat-cute.gif" alt="">
+        </div>
+    </section>
+    <section>
+        <h2>Cat Lists</h2>
+        <h2>Things cats love:</h2>
+        <ul>
+            <li>cat nip</li>
+            <li>laser pointers</li>
+            <li>lasagna</li>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmJOAPmE-Lfx2NwBEixixOOX1Y65iY0yfU2A&s" alt="Sorry papa image ledu"><br>
+            <caption>Cats love lasagna.</caption>
+        </ul>
+    </section>
+    <section>
+        <h2>Top 3 things cats hate:</h2>
+        <ol>
+            <li>flea treatment</li>
+            <li>thunder</li>
+            <li>other Cats</li>
+        </ol>
+        <img src="https://images.litter-robot.com/media/wysiwyg/kindle-kittens.png" alt="Pilli ledu palu thagi bajundhi" width="700" height="400"><br>
+        <caption>Cats <b>hate</b> other cats.</caption>
+    </section>
+    <form action="#">
+        <fieldset>
+            <legend>Is your cat an indoor or outdoor cat?</legend>
+            <label>
+                <input type="radio" name="cat_type" value="indoor"> Indoor
+            </label>
+            <label>
+                <input type="radio" name="cat_type" value="outdoor"> Outdoor
+            </label>
+        </fieldset>
+
+        <fieldset>
+            <legend>What your cats's persionality?</legend>
+            <label>
+                <input type="checkbox" name="cat_type" value="indoor"> Loving
+            </label>
+            <label>
+                <input type="checkbox" name="cat_type" value="outdoor"> Lazy
+            </label>
+            <label>
+                <input type="checkbox" name="cat_type" value="outdoor"> Energetic
+            </label>
+        </fieldset>
+        <input type="text" placeholder="cat photo url pettu mava">
+        <input type="submit">
+    </form>
+
+    
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f3f4f6;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #da5baa;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        section {
+            padding: 20px;
+            margin: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h1, h2 {
+            color: #333;
+        }
+        a {
+            color: #4CAF50;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        img {
+            display: block;
+            margin: 10px auto;
+            max-width: 100%;
+            border-radius: 8px;
+        }
+        ul, ol {
+            padding-left: 20px;
+        }
+        li {
+            margin: 10px 0;
+        }
+        form {
+            padding: 20px;
+            background-color: #f9f9f9;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        fieldset {
+            margin-bottom: 20px;
+            border: none;
+        }
+
+        footer {
+            padding: 20px;
+            text-align: center;
+            background-color: #e658a1;
+            color: white;
+            width: 100%;
+            bottom: 0;
+        }
+        .image-container {
+            display: flex;
+            gap: 2px;
+        }
+        .image-container img {
+            max-width: 15%;
+            border-radius: 8px;
+        }
+    </style>
+
+<footer >No Copyright -> all rights are reserved by Naresh Thota.</footer>
+
+</body>
+</html>

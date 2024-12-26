@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <style>
+        body {
+            background-color: #c3ceed;
+            color: #000000;
+            padding: 40px;
+            margin: 100px;
+        }
+        form {
+            text-align: left;
+            background-color:rgb(36, 36, 78);
+            color: white;
+            padding: 30px;
+            border-radius: 10px;
+            max-width: 500px;
+            margin: auto;
+        }
+        input[type="text"],
+        input[type="email"],
+        input[type="password"],
+        input[type="number"],
+        input[type="file"],
+        select,
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 5px;
+            border: none;
+            border-radius: 5px;
+            background-color: #f1f2f4;
+            color: black;
+        }
+        input[type="radio"] {
+            margin: 0 10px 0 0;
+        }
+        label {
+            display: flex;
+            margin: 10px 0 5px;
+        }
+        hr {
+            border: 1px solid #e0e0e0;
+        }
+        h1, h4 {
+            color: #e0e0e0;
+            text-align: center;
+        }
+        button {
+
+            color: #000000;
+            padding: 10px ;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100%;
+        }
+
+        .terms {
+            display: flex;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <form action="#">
+        <h1>Registration Form</h1>
+        <p style="text-align: center;">Please fill out this form with the required information</p>
+        <section>
+            <label for="firstname">Enter Your First Name:</label>
+            <input type="text"><br>
+            <label for="lastname">Enter Your Last Name:</label>
+            <input type="text"><br>
+            <label for="email">Enter Your Email:</label>
+            <input type="email"><br>
+            <label for="password">Create a New Password:</label>
+            <input type="password"><br>
+            <br>
+        </section>
+
+        <hr>
+        <h4>Account type(required)</h4>
+        <label for="personal"><input type="radio" name="account" id="personal"> Personal</label>
+        <label for="business"><input type="radio" name="account" id="business"> Business</label><br>
+        <br>
+        <hr>
+        <h4>Upload a profile picture:</h4>
+        <input type="file" placeholder="Choose a file">
+        <h4>Input your age (years):</h4>
+        <input type="number">
+        <h4>How did you hear about us?</h4>
+        <select name="source" id="source">
+            <option value="0">(select one)</option>
+            <option value="1">Instagram</option>
+            <option value="2">Facebook</option>
+            <option value="3">Twitter</option>
+            <option value="4">Youtube</option>
+        </select>
+        <h4>Provide a bio:</h4>
+        <textarea name="bio" id="bio" placeholder="I like coding on the balcony..."></textarea>
+        <br>
+        <div class="terms">
+            <input type="checkbox" id="terms">
+            <label for="terms">I accept the <a href="#" style="color: white;" >terms and conditions</a></label>
+        </div>
+        <br>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
